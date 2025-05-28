@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "esModuleInterop": true,  // This line enables esModuleInterop
+    "strict": true,
+    "skipLibCheck": true // Optional, helps ignore type errors in library files
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}
+

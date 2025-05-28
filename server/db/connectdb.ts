@@ -1,0 +1,13 @@
+//mongopassword:Ny7rQXkjAJ41fBCZ
+//mongouser:munendraraghuvanshi669
+import mongoose from "mongoose";
+
+const connectDB =async() =>{
+    try {
+        await mongoose.connect(process.env.MONGO_URI!);
+        
+    } catch (error) {
+        console.log(error)
+    }
+}
+export default connectDB;
