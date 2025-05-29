@@ -20,7 +20,7 @@ const clientDistPath = path.join(process.cwd(), "client", "dist");
 
 app.use(
   cors({
-    origin: "http://localhost:5174,https://res-app-5.onrender.com", 
+    origin: "https://res-app-5.onrender.com", 
     credentials: true,
   })
 );
