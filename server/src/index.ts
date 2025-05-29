@@ -13,14 +13,14 @@ import path from "path";
 dotenv.config();
 
 const app = express();
-const PORT = Number(process.env.PORT) || 3000;
+const PORT = Number(process.env.PORT || 3000);
 
 
 const clientDistPath = path.join(process.cwd(), "client", "dist");
 
 app.use(
   cors({
-    origin: "http://localhost:5174", 
+    origin: "http://localhost:5174,https://res-app-5.onrender.com", 
     credentials: true,
   })
 );
