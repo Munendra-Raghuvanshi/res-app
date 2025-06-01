@@ -11,8 +11,6 @@ import orderRoute from "./routes/order.route";
 import path from "path";
 
 dotenv.config();
-const frontendUrl = process.env.FRONTEND_URL || "http://localhost:3000";
-console.log("Frontend URL from env:", frontendUrl);
 
 const app = express();
 const PORT = Number(process.env.PORT || 3000);
@@ -22,7 +20,7 @@ const clientDistPath = path.join(process.cwd(), "client", "dist");
 
 app.use(
   cors({
-    origin: "frontendUrl", 
+    origin: "https://res-app-5.onrender.com", 
     credentials: true,
   })
 );
