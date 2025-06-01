@@ -198,7 +198,7 @@ const MobileNavbar = () => {
             <ShoppingCart />
 
             
-            <span> {cart.length > 0 && (
+            <span> cart  {cart.length > 0 && (
                 <button className="absolute -inset-y-3 left-2 text-xs rounded-full h-4 w-4 bg-orange-500 hover:bg-orange-300">
                   {cart.length}
                 </button>

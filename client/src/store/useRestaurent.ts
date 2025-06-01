@@ -3,8 +3,12 @@ import axios from "axios";
 import { toast } from "sonner";
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
-const API_END_POINT = "http://localhost:8000/api/v1/restaurant";
-axios.defaults.withCredentials = true;
+const API_BASE_URL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:8000/api/v1"
+    : "https://res-app-5.onrender.com/api/v1";
+    const API_END_POINT = `${API_BASE_URL}/user`;
+    axios.defaults.withCredentials = true;
 
 export type MenuItem = {
   _id: string;
