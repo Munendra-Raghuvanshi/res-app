@@ -6,7 +6,7 @@ import { toast } from "sonner";
 const API_BASE_URL =
   window.location.hostname === "localhost"
     ? "http://localhost:8000/api/v1"
-    : "https://your-backend.onrender.com/api/v1";
+    : "https://res-app-5.onrender.com/api/v1";
     const API_END_POINT = `${API_BASE_URL}/user`;
     axios.defaults.withCredentials = true;
 
