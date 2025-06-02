@@ -7,7 +7,7 @@ const API_BASE_URL =
   window.location.hostname === "localhost"
     ? "http://localhost:8000/api/v1"
     : "https://res-app-5.onrender.com/api/v1";
-    const API_END_POINT = `${API_BASE_URL}/user`;
+    const API_END_POINT = `${API_BASE_URL}/restaurant`;
     axios.defaults.withCredentials = true;
 
 export type MenuItem = {
